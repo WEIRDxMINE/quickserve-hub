@@ -8,6 +8,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import ChatDemo from "./pages/ChatDemo";
 import UserDashboard from "./pages/UserDashboard";
 import ProviderDashboard from "./pages/ProviderDashboard";
+import ServicesPage from "./pages/ServicesPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/chat" element={<ChatDemo />} />
           <Route path="/user" element={<UserDashboard />} />
           <Route path="/provider" element={<ProviderDashboard />} />
+          <Route path="/services" element={<ServicesPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
